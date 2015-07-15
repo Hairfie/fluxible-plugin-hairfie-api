@@ -13,6 +13,10 @@ Client.prototype.get = function (path, options) {
     return this._send({ method: 'get', path: path, options: options });
 };
 
+Client.prototype.head = function (path, options) {
+    return this._send({ method: 'head', path: path, options: options });
+};
+
 Client.prototype.post = function (path, data, options) {
     return this._send({ method: 'post', path: path, data: data, options: options });
 };
